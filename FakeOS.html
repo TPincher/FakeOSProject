@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeOS</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="GUI">
+        <div class="GUI__shortcuts">
+            <img class= "shortcuts__icon" id="backgroundFolderButton" src="./Icons/backgrounds.png" alt="Placeholder image">
+            <img class= "shortcuts__icon" id="notepadButton" src="./Icons/notepad.png" alt="Placeholder image">
+            <img class= "shortcuts__icon" id="pixelmakerButton" src="./Icons/camera.png" alt="Placeholder image">
+            <img class= "shortcuts__icon" id="recyclingButton" src="./Icons/recycling.png" alt="Placeholder image">
+        </div>
+        <div class="GUI__startMenu">
+            <div>
+                <img class= "startMenu__main" id="startMenu" src="./Icons/MenuExpanded.jpg">
+            </div>
+            <div class="startMenu__shortcuts">
+                <img class= "startMenu__searchIcon" id="SMbackgroundFolderButton"src="./Icons/backgrounds.png" alt="Placeholder image">
+                <p class="startMenu__text">Desktop Selector</p>
+                <img class= "startMenu__searchIcon" id="SMnotepadButton"src="./Icons/notepad.png" alt="Placeholder image">
+                <p class="startMenu__text">Notepad</p>
+                <img class= "startMenu__searchIcon" id="SMpixelmakerButton" src="./Icons/camera.png" alt="Placeholder image">
+                <p class="startMenu__text">Pixel Maker</p>
+                <img class= "startMenu__searchIcon" id="SMrecyclingButton" src="./Icons/recycling.png" alt="Placeholder image">
+                <p class="startMenu__text">Recycling Bin</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="taskbar">
+        <div class="taskbar__leftPortion">
+            <img class="startButton__image" src="./Icons/StartMenu.JPG" alt="Start Menu">
+            <img class= "taskbar__searchIcon" src="./Icons/SearchGlass.JPG" alt="SearchGlass">
+            <input class="taskbar__searchbar" type="text" placeholder="Type here to search">
+            <img class= "taskbar__shortcut" id="TBbackgroundFolderButton" src="./Icons/backgrounds.png" alt="Placeholder image">
+            <img class= "taskbar__shortcut" id="TBnotepadButton" src="./Icons/notepad.png" alt="Placeholder image">
+            <img class= "taskbar__shortcut" id="TBpixelmakerButton" src="./Icons/camera.png" alt="Placeholder image">
+            <img class= "taskbar__shortcut" id="TBrecyclingButton" src="./Icons/recycling.png" alt="Placeholder image">
+        </div>
+
+        <div class="taskbar__rightPortion">
+            <img class= "taskbar__settingsIcons" src="./Icons/SettingsIcons.JPG" alt="Settings">
+            <div class="taskbar__clock">
+                <p id="clock__time"></p>
+                <p id="clock__date"></p>
+            </div>
+            <img class= "messageIcon" src="./Icons/Messages.JPG" alt="System Messages">
+        </div>
+    </section>
+
+    <dialog id="modalSkeleton">
+        <button autofocus id="modalSkeleton__closer">Close</button>
+    </dialog>
+      
+</body>
+</html>
