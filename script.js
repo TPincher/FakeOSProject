@@ -1,5 +1,5 @@
 // Function to run the clock on the bottom-right of the desktop.
-function updateDateTime() {
+const updateDateTime = () => {
     const now = new Date();
     let hour = now.getHours();
     let meridium = "AM"
@@ -22,7 +22,7 @@ function updateDateTime() {
 }
 
 // Function to show start menu
-function startMenu() {
+const startMenu = () => {
   const startMenu = document.querySelector(".GUI__startMenu");
 
   if (startMenu.style.display == '' || startMenu.style.display == 'none') {
@@ -33,12 +33,12 @@ function startMenu() {
   };
 }
 
-function startMenuCloser() {
+const startMenuCloser = () => {
   const startMenu = document.querySelector(".GUI__startMenu");
   startMenu.style.display = 'none'
 }
 
-function openModal(modalContent) {
+const openModal = (modalContent) => {
   const dialog = document.querySelector("#modalSkeleton");
   const closeButton = document.querySelector("dialog button");
   modalContent.style.height = "100%";
@@ -53,7 +53,7 @@ function openModal(modalContent) {
 
 
 //background selector modal function
-function backgroundSelector() {
+const backgroundSelector = () => {
   const content1 = document.createElement("div")
   openModal(content1)
   const backgroundImages = [
@@ -77,7 +77,7 @@ function backgroundSelector() {
 }
 
 //notepad modal function
-function notepad () {
+const notepad = () => {
   const content1 = document.createElement("div")
   openModal(content1)
   const title = "<h1 id='backgroundTitle' class='modalTitle'>Notepad</h1>"
@@ -99,7 +99,7 @@ function notepad () {
 }
 
 //pixelMaker modal function
-function pixelmaker () {
+const pixelmaker = () => {
   const content1 = document.createElement("div")
   openModal(content1)
   const title = "<h1 id='pixelTitle' class='modalTitle'>Pixel Art Maker</h1>"
@@ -125,7 +125,7 @@ function pixelmaker () {
     }
 }
 // The function to make a new table
-function makeGrid() {
+const makeGrid = () => {
   let rows = document.querySelector('#pixelHeight').value;
   let columns = document.querySelector('#pixelWidth').value;
   // Limit the size of the canvas to 40x40 cells
@@ -156,7 +156,7 @@ sizeSubmit.addEventListener('submit', function (create) {
   })
 }
 
-function recyclingBin () {  
+const recyclingBin = () => {  
   const content1 = document.createElement("div")
   openModal(content1)
   const title = "<h1 id='backgroundTitle' class='modalTitle'>Recycling Bin</h1>"
